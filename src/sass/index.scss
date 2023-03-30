@@ -1,2 +1,14 @@
 @import './common';
 @import './example';
+
+// base styles
+@import './base/base';
+@import './base/reset';
+
+// utils styles
+@import './utiles/decimals';
+@import './utiles/mixin';
+@import './utiles/variables';
+
+// components styles
+@import './components/container';

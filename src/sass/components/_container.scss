@@ -1,0 +1,23 @@
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+
+  min-width: 320px;
+
+  // phone screen
+  @include mq(phone) {
+    width: 320px;
+  }
+
+  // tablet screen
+  @include mq(tablet) {
+    width: 768px;
+    padding: 0 32px;
+  }
+
+  // desktop screen
+  @include mq(desktop) {
+    width: 1280px;
+    padding: 0 16px;
+  }
+}
