@@ -1,0 +1,40 @@
+:root {
+  /* Fonts */
+  --main-font: 'Montserrat', sans-serif;
+  // --secondary-font: 'Seymour One', sans-serif;
+
+  /* Text colors */
+  --main-txt-cl: #ffffff;
+  --secondary-txt-cl: #939393;
+  --accent-txt-cl: #dc56c5;
+
+  /* BG colors */
+
+  --bg-cl: #212121;
+  // --bg-cl-1: #aec6a5;
+  // --bg-cl-2: #efd478;
+  // --bg-cl-3: #d6936d;
+
+  // --menu-bg-cl: #85a279;
+  // --modal-bg-cl: #fcfcfc;
+  // --input-bg-cl: rgba(248, 210, 78, 0.1);
+
+  /* Others */
+  // --btn-cl: #f8d24e;
+  // --btn-hover-cl: #0a8817;
+  // --btn-disabled-cl: #ababab;
+  // --btn-radius: 10px;
+  // --btn-border: #96af8c;
+
+  // --border-cl: #e1e1e1;
+
+  // --icon-cl: #84a178;
+
+  // --slider-cl: #84a178;
+  // --slider-sec-cl: #d9d9d9;
+}
+
+// BREAKPOINTS
+$mobile: 320px;
+$tablet: 768px;
+$desktop: 1280px;

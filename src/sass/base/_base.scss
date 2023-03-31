@@ -1,0 +1,24 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  // color: var(--main-txt-cl);
+
+  // background-color: var(--bg-cl);
+  background-image: url('../images/bg-desc@1x.png');
+  // background: no-repeat;
+
+  // @include mq(tablet) {
+  //   background-color: var(--bg-cl);
+  //   background-image: url('../images/bg-tab@1x.png');
+  // }
+
+  // @include mq(desktop) {
+  //   background-color: var(--bg-cl);
+  //   background-image: url('../images/bg-mob@1x.png');
+  // }
+}
