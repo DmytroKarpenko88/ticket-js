@@ -1,4 +1,3 @@
-// change calss according to html
 .header {
   height: 364px;
   background-image: url('../images/bghead-mob@1x.png');
@@ -10,5 +9,40 @@
   @include mq(desktop) {
     height: 446px;
     background-image: url('../images/bghead-desc@1x.png');
+  }
+}
+
+.header__container {
+  @include mq(tablet) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @include mq(desktop) {
+  }
+}
+
+// .header__logo {
+// }
+
+.header__title {
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--accent-txt-cl);
+
+  margin-left: auto;
+  margin-right: auto;
+
+  @include fonts(18px, 22px, 900);
+  width: 280px;
+
+  @include mq(tablet) {
+    @include fonts(30px, 37px);
+    width: 400px;
+  }
+
+  @include mq(desktop) {
+    @include fonts(50px, 61px);
+    width: 608px;
   }
 }
