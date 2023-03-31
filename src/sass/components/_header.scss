@@ -1,0 +1,14 @@
+// change calss according to html
+.header {
+  height: 364px;
+  background-image: url('../images/bghead-mob@1x.png');
+
+  @include mq(tablet) {
+    background-image: url('../images/bghead-tab@1x.png');
+  }
+
+  @include mq(desktop) {
+    height: 446px;
+    background-image: url('../images/bghead-desc@1x.png');
+  }
+}
