@@ -1,0 +1,26 @@
+.header__form-search {
+  justify-content: center;
+  display: flex;
+  gap: 34px;
+}
+
+.header__event-search {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 10px 0 10px 32px;
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 20px;
+
+  width: 288px;
+  height: 40px;
+
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  /* identical to box height */
+
+  color: #939393;
+}

@@ -19,6 +19,7 @@ async function onSearchEvents(e) {
       },
     } = await eventApi.fetchAllEvents(value);
     console.log('events:', events);
+    renderGallery(events);
   } catch (error) {
     console.log(error.message);
   }
