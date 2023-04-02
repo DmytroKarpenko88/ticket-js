@@ -24,7 +24,6 @@ export function renderGallery(events) {
       `;
     })
     .join('');
-  console.log('markup:', markup);
 
-  gallery.insertAdjacentHTML('beforeend', markup);
+  gallery.innerHTML = markup;
 }
