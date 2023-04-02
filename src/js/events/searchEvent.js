@@ -1,4 +1,5 @@
 import { eventApi } from '../services/api';
+import { renderGallery } from '../services/markupService';
 
 const refs = {
   form: document.querySelector('#searchForm'),
