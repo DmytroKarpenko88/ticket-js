@@ -1,7 +1,6 @@
 .container {
   margin: 0 auto;
   padding: 0 20px;
-
   min-width: 320px;
 
   // phone screen
@@ -19,5 +18,6 @@
   @include mq(desktop) {
     width: 1280px;
     padding: 0 16px;
+   
   }
 }
