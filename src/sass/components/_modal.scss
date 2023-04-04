@@ -1,0 +1,50 @@
+.modal {
+  margin: 0 auto;
+
+  &__container {
+    background-color: #fff2fd;
+    width: 1032px;
+    height: 918;
+
+    border-radius: 300px 0px;
+    // margin: 0 auto;
+
+    position: relative;
+  }
+
+  &__btn-close {
+    width: 25px;
+    height: 25px;
+    background-color: rgba(0, 0, 0, 0);
+    background-image: url(../images/icons/close.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    position: absolute;
+    right: 32px;
+    top: 32px;
+  }
+
+  &__content {
+    border-radius: 300px 0px;
+    padding-top: 54px;
+  }
+
+  &__picture {
+    border-radius: 50%;
+    margin: 0 auto;
+    width: 132px;
+    height: 132px;
+    overflow: hidden;
+
+    &-circle {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__information {
+    display: flex;
+    margin-top: 40px;
+  }
+}

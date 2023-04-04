@@ -5,7 +5,6 @@ export function renderGallery(events) {
     .map(event => {
       const { id, images, name, dates, _embedded } = event;
       const image = images.find(el => el.ratio === '4_3' && el.width === 305);
-      console.log('image:', image);
 
       return `<li class="card" data-id="${id}">
       <div class="card__decore"></div>
@@ -15,7 +14,7 @@ export function renderGallery(events) {
       <p class="card__name">${name}</p>
       <p class="card__date">${dates.start.localDate}</p>
       <p class="card__place">
-      <svg class="icon-place" width="" height="">
+      <svg class="icon-place" width="20" height="20">
       <use href="#"></use>
       </svg>
       ${_embedded.venues[0].name}
