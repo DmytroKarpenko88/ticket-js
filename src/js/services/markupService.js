@@ -1,4 +1,4 @@
-import sprite from "./../../images/location.svg";
+import sprite from './../../images/location.svg';
 
 const gallery = document.querySelector('.gallery');
 
@@ -7,7 +7,6 @@ export function renderGallery(events) {
     .map(event => {
       const { id, images, name, dates, _embedded } = event;
       const image = images.find(el => el.ratio === '4_3' && el.width === 305);
-      console.log('image:', image);
 
       return `<li class="card" data-id="${id}">
       <div class="card__decore"></div>
