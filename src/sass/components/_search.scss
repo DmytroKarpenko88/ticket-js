@@ -2,6 +2,9 @@
   justify-content: center;
   display: flex;
   gap: 34px;
+
+  flex-wrap: wrap;
+  border: none;
 }
 
 .header__event-search {
@@ -15,6 +18,7 @@
   /* Note: backdrop-filter has minimal browser support */
 
   border-radius: 20px;
+  border: none;
 
   width: 288px;
   height: 40px;
