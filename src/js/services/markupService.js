@@ -1,3 +1,5 @@
+import sprite from './../../images/location.svg';
+
 const gallery = document.querySelector('.gallery');
 
 export function renderGallery(events) {
@@ -14,8 +16,8 @@ export function renderGallery(events) {
       <p class="card__name">${name}</p>
       <p class="card__date">${dates.start.localDate}</p>
       <p class="card__place">
-      <svg class="icon-place" width="20" height="20">
-      <use href="#"></use>
+      <svg class="icon-place" width="10px" height="10px">
+      <use href="${sprite}#icon-location"></use>
       </svg>
       ${_embedded.venues[0].name}
       </p>
