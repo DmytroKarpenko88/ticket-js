@@ -7,6 +7,8 @@
     height: 918;
 
     border-radius: 300px 0px;
+
+    padding-top: 54px;
     // margin: 0 auto;
 
     position: relative;
@@ -26,7 +28,7 @@
 
   &__content {
     border-radius: 300px 0px;
-    padding-top: 54px;
+    padding-top: 54px 0 0;
   }
 
   &__picture {
@@ -41,10 +43,36 @@
       height: 100%;
       object-fit: cover;
     }
+
+    &-large {
+      width: 427px;
+      height: 326px;
+      float: left;
+
+      margin: 0 32px 16px 74px;
+    }
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #dc56c5;
   }
 
   &__information {
-    display: flex;
     margin-top: 40px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #0e0e0e;
   }
 }
