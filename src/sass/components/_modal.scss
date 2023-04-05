@@ -17,7 +17,6 @@
     width: 25px;
     height: 25px;
     background-color: rgba(0, 0, 0, 0);
-    background-image: url(../images/icons/close.svg);
     background-repeat: no-repeat;
     background-position: 50% 50%;
     position: absolute;
@@ -85,8 +84,8 @@
     margin-right: 16px;
   }
 
-  &__price {
-    &-wrap {
+  &__prices {
+    &-list {
       display: flex;
       gap: 60px;
     }
@@ -129,4 +128,8 @@
 
     color: #4c00fe;
   }
+}
+
+.wrapper {
+  display: flex;
 }
