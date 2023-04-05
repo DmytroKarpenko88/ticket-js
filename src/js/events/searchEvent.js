@@ -17,8 +17,10 @@ async function onSearchEvents(e) {
     const {
       data: {
         _embedded: { events },
+        page,
       },
     } = await eventApi.fetchAllEvents(value);
+    console.log('page:', page);
     console.log('events:', events);
     renderGallery(events);
   } catch (error) {

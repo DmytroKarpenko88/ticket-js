@@ -1,3 +1,4 @@
+import { eventApi } from '../services/api';
 // import Pagination from 'tui-pagination';
 // import axios from 'axios';
 
@@ -6,8 +7,20 @@
 // let currentPage = 1;
 // let totalPages = 0;
 
-// const eventList = document.getElementById('event-list');
-// const paginationContainer = document.getElementById('pagination');
+const eventList = document.getElementById('event-list');
+const paginationContainer = document.getElementById('pagination');
+
+renderEvents();
+async function renderEvents(value) {
+  try {
+    const {
+      data: { page },
+    } = await eventApi.fetchAllEvents(value);
+    console.log('result:', page);
+  } catch (error) {
+    console.log(error.message);
+  }
+}
 
 // function renderEvents(page) {
 //   axios
