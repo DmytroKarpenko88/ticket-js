@@ -46,6 +46,8 @@ export const eventApi = new EventApi();
 const page = eventApi.page;
 console.log('page:', page);
 
+apiTicketmaster.page = currentpage;
+
 //для перевірки запиту
 export async function event(searchEvent) {
   try {
@@ -54,4 +56,4 @@ export async function event(searchEvent) {
     console.log(error.message);
   }
 }
-// event();
+console.log(event());
